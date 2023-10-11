@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Lampada</title>
+    <link rel="stylesheet" href="./style.css"> <!--Global-->
+    <link rel="stylesheet" href="./components/lampada-component/style.css"> <!--Scoped-->
+    <link rel="stylesheet" href="./components/footer-component/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Projeto Lampada</h1>
+    </header>
+
+    <main>
+      <div class="lampada-container">
+        <img src="./components/lampada-component/assets/img/20-lamp-png-image.png" alt="lampada-apagada" width="200px" id="lampada-apagada">
+        <img src="./components/lampada-component/assets/img/lampada_20_porcento.png" alt="lampada-acesa" width="200px" style="display: none;" id="lampada-acesa-20">
+        <img src="./components/lampada-component/assets/img/lampada_50_porcento.png" alt="lampada-acesa" width="200px" style="display: none;" id="lampada-acesa-50">
+        <img src="./components/lampada-component/assets/img/lampada_100_porcento.png" alt="lampada-acesa" width="200px" style="display: none;" id="lampada-acesa-100">
+      </div>
+
+      <div class="btn-container">
+        <img src="./components/lampada-component/assets/img/off.png" alt="interruptor-lampada" width="150px" id="btn-off">
+
+        <img src="./components/lampada-component/assets/img/on.png" alt="interruptor-lampada" width="150px" style="display: none;" id="btn-on">
+
+
+        <div class="controlador">
+          <label for="controlador">Controlador:</label> <br>
+          <input type="range" id="controlador" name="controlador" min="0" max="100" value="50">
+
+        </div>
+      </div>
+      
+      <p>Intensidade: <span id="valorSelecionado">50</span></p>
+
+    
+
+    </main>
+
+    <footer>
+      <p>💡 Luis Neves - Turma 1032 💡</p>
+    </footer>
+    
+    <script src="./components/lampada-component/script.js"></script>
+  </body>
+</html>

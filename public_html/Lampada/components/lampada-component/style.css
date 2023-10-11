@@ -1,0 +1,56 @@
+/*Container da lampada*/
+main .lampada-container {
+  margin-top: 5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around; /* Ou use "space-between" para colocar as divs nas extremidades */
+  align-items: center;
+}
+
+
+#btn-off,
+#btn-on {
+  cursor: pointer;
+  margin-left: 90px;
+}
+
+.controlador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+
+input[type="range"] {
+
+  /* Remova a aparência padrão do range */
+  -webkit-appearance: none;
+  -moz-appearence: none;
+  appearance: none;
+
+  /* Estilo da trilha do range */
+  height: 5px; /* Altura da trilha */
+  width: 150px; /* Largura da trilha */
+  border-radius: 5px; /* Borda arredondada */
+
+  /* Cor da trilha do range */
+  background-color: #fbff00;
+  border: 1px solid #00000052;
+}
+
+/* Estilo do cursor (ponteiro) do range */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px; /* Largura do cursor */
+  height: 15px; /* Altura do cursor */
+  border-radius: 50%; /* Borda arredondada */
+  background-color: #000000; /* Cor do cursor */
+  cursor: pointer; /* Mostrar cursor do tipo "mão" */
+}
+
+
+
